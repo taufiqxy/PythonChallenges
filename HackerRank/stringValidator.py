@@ -20,7 +20,7 @@ if __name__ == '__main__':
             print('False')
 
 #########################################################
-# Alternative 2 more safer
+# Alternative 2, more safer
 #########################################################
 
 if __name__ == '__main__':
@@ -49,3 +49,22 @@ if __name__ == '__main__':
                 break
         if condition:
             print('False')
+
+#########################################################
+# Alternative 3, the simple one (using built function)
+#########################################################
+
+if __name__ == '__main__':
+    s = input()
+    
+    condition1 = any(aLetter.isalnum() for aLetter in s)
+    condition2 = any(aLetter.isalpha() for aLetter in s)
+    condition3 = any(aLetter.isdigit() for aLetter in s)
+    condition4 = any(aLetter.islower() for aLetter in s)
+    condition5 = any(aLetter.isupper() for aLetter in s)
+    
+    print(condition1)
+    print(condition2)
+    print(condition3)
+    print(condition4)
+    print(condition5)
