@@ -68,3 +68,34 @@ if __name__ == '__main__':
     print(condition3)
     print(condition4)
     print(condition5)
+
+#########################################################
+# Alternative 4, another alternative
+#########################################################
+
+if __name__ == '__main__':
+    s = input()
+    
+    condition1 = False
+    condition2 = False
+    condition3 = False
+    condition4 = False
+    condition5 = False
+    
+    for aLetter in s:
+        if aLetter.isalnum():
+            condition1 = True
+        if aLetter.isalpha():
+            condition2 = True
+        if aLetter.isdigit():
+            condition3 = True
+        if aLetter.islower():
+            condition4 = True
+        if aLetter.isupper():
+            condition5 = True
+    
+    print(condition1)
+    print(condition2)
+    print(condition3)
+    print(condition4)
+    print(condition5)
